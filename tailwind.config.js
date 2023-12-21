@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     './app/views/**/*.html.erb',
@@ -8,5 +10,10 @@ module.exports = {
   ],
   plugins: [
     require('flowbite/plugin')
-  ]
+  ],
+  theme: {
+    'colors': {
+      ...colors,
+    }
+  }
 }
