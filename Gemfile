@@ -70,3 +70,4 @@ group :test do
 end
 
 gem 'bcrypt', '~> 3.1', '>= 3.1.20'
+gem "image_processing", ">= 1.2"
