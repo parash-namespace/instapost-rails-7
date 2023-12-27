@@ -11,6 +11,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'shared/navbar' %>
+    <div class="max-w-screen-xl items-center justify-between mx-auto p-1 md:p-4">
+      <%= yield %>
+    </div>
   </body>
 </html>
