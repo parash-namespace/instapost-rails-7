@@ -9,5 +9,7 @@ Rails.application.routes.draw do
 
   resources :posts do
     resources :comments
-  end  
+    resources :upvotes, only: :create, controller: 'posts/upvotes'
+    resources :downvotes, only: :create, controller: 'posts/downvotes'
+  end
 end
